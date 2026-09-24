@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biodata</title>
+</head>
+
+<body>
+  <from action="proses.html" method="post">
+    <label for="">nama</label> <input type="text" name="nama" id="" value="budi"><br>
+    <label for="">tempat lahir</label> <input type="text" name="tmpt_lahir" id="tmpt_lahir" value="bandung"><br>
+    <label for="">tanggal lahir</label> <input ype="date" name="tgl_lahir" id="tgl_lahir" value="2006-05-20"><br>
+
+    <p>hobi (bisa lebih dari 1 pilihan)</p>
+    <label for="">berenang</label><input type="checkbox" name="hobi[]" checked id="berenang" value="berenang">
+    <label for="">bernyanyi</label><input type="checkbox" name="hobi[]" checked id="bernyanyi" value="bernyanyi">
+    <label for="">menari</label><input type="checkbox" name="hobi[]" checked id="menari" value="menari">
+    <br>
+    <p>jenis kelamin</p>
+    <label for="">laki-laki</label><input type="radio" name="jk" id="" value="L">
+    <label for="">perempuan</label><input type="radio" name="jk" id="" checked value="P">
+
+    
+    
+     
+    <p>deskripsi tentang kamu</p>
+     <textarea name="deskripsi" id="">saya adalah............</textarea>
+
+
+     <select name="agama" id="">
+        <option value="1">islam</option>
+        <option value="2">khatolik</option>
+        <option value="3">prostestan</option>
+        <option value="4">hindu</option>
+        <option value="5">budha</option>
+        </select>
+
+     
+
+
+</body>
+<input type="submit" value="simpan">
+</from> 
+</html>
