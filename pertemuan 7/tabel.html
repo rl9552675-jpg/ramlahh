@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+    <style>
+        td,
+        th {
+            border-bottom: 1px solid rgb(168, 181, 168);
+            padding:  10px;
+        }
+
+        th {
+            background-color: green;
+            color: beige;
+        }
+
+        table {
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            white: 300px;
+        }
+
+        tbody>tr {
+            cursor: pointer;
+        }
+
+        tbody>tr:hover {
+            background-color: #e88585;
+            color: rgb(277, 277, 277);
+        }
+
+        tfoot td {
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+           background-color: #e7e7e7;
+           color: #fff;
+           text-shadow: 2px 2px 3px rgb(255, 0, 0), -2px -2px 5px  black;
+        }
+
+        tbl-responsive {
+            overflow-x: auto;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>tabel mahasiswa</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">no</th>
+                <th rowspan="2">NIM</th>
+                <th rowspan="3">mahasiswa</th>
+            </tr>
+            <tr>
+                <th>prodi</th>
+                <th>alamat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2402011025</td>
+                <td>ramlah</td>
+                <td>teknik informatika</td>
+                <td>bungo</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>2402011026</td>
+                <td>romla</td>
+                <td>teknik informatika</td>
+                <td>jambi</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2402011027</td>
+                <td>rumla</td>
+                <td>teknik informatika</td>
+                <td>padang</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">jumlah</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+
+</body>
+</html>
